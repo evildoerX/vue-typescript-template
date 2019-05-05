@@ -1,18 +1,18 @@
 import Vue from 'vue';
 import VueI18n from 'vue-i18n';
 
-import cn from './cn.json';
-import en from './en.json';
+import zhCN from './zhCN';
+import enUS from './enUS';
 
 Vue.use(VueI18n);
 
 const messages = {
-  cn,
-  en
+  zhCN,
+  enUS
 };
 
 const i18n = new VueI18n({
-  locale: 'en',
+  locale: 'enUS',
   messages
 });
 

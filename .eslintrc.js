@@ -10,19 +10,33 @@ module.exports = {
   ],
   rules: {
     'comma-dangle': 'off',
+    'arrow-body-style': 'off',
+    'object-curly-newline': 'off',
+    'import/no-cycle': 'off', // 为什么会报这个错？
+    'no-else-return': 'off',
+    'array-callback-return': 'off',
+    'prefer-template': 'off',
+    'arrow-parens': 'off',
+    'no-unused-expressions': 'off',
+    radix: 'off',
+    'no-tabs': 'off',
+    indent: 'off',
+    'no-return-await': 'off',
+    'operator-linebreak': 'off',
+    'no-nested-ternary': 'off',
     // line
     'max-len': 'off',
     'new-cap': 'off',
     'no-continue': 'off',
-    'experimentalDecorators': 'off',
+    experimentalDecorators: 'off',
     'consistent-return': 'off',
     'no-plusplus': 'off',
     'guard-for-in': 'off',
     'prefer-destructuring': 'off',
     'prefer-promise-reject-errors': 'off',
-    'camelcase': 'off',
+    camelcase: 'off',
     'eslint-import-resolver-typescript': {
-      'extensions': ['.ts', '.tsx', '.d.ts']
+      extensions: ['.ts', '.tsx', '.d.ts']
     },
     'space-infix-ops': 'off',
     'import/prefer-default-export': 'off',
@@ -51,9 +65,7 @@ module.exports = {
     'vue/require-default-prop': 'error',
     'vue/require-prop-types': 'error',
     'vue/attributes-order': 'error',
-    'vue/order-in-components': 'error',
-    'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'vue/order-in-components': 'error'
   },
   parserOptions: {
     parser: '@typescript-eslint/parser',
